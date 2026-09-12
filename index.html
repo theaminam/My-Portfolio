@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/Queries.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- NOTE Header -->
+    <header>
+      <h1 class="header"><a href="#Home">Amin</a></h1>
+      <nav class="navigation">
+        <a href="#home">home</a>
+        <a href="#Skills">skills</a>
+        <a href="#Projects">projects</a>
+        <a href="#Contact">contact</a>
+      </nav>
+      <button class="menu-btn" aria-label="open menu">
+        <img class="menu-icon" src="SVG/bars-solid-full.svg" alt="menu" />
+      </button>
+    </header>
+
+    <!--NOTE Main -->
+
+    <main>
+      <!-- NOTE Hero -->
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="hero-intro">Hello,</p>
+          <h2 class="hero-intro">I'm Amin</h2>
+          <h2 class="hero-dev">full-stack developer</h2>
+          <p class="hero-description">
+            I build things,break things,and learn how to build them better,and i
+            working toward becoming a full-stack developer
+          </p>
+          <div class="hero-actions">
+            <a href="#Projects" class="btn btn-primary">View Projects ></a>
+            <a href="https://github.com/theaminam" target="_blank" class="btn"
+              >Github <img src="SVG/github-brands-solid-full.svg" alt="Github"
+            /></a>
+          </div>
+        </div>
+
+        <!-- NOTE Code window -->
+        <div class="code-window">
+          <div class="code-window-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <pre>
+            <code>
+              const developer = {
+              name: <span>"Amin"</span>,
+              role: "Full-stack developer",
+              skills: ["HTML","CSS","Java script"],
+              learning:  <span>true</span>
+            };
+            </code>
+          </pre>
+          <div class="code-window-footer">
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTE Projects -->
+      <section class="Projects" id="Projects">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <a href="#">View All</a>
+        </div>
+        <div class="Projects-grid">
+          <!-- NOTE Project 1 -->
+          <article class="Project-card">
+            <div class="project-icon">
+              <img src="SVG/info.svg" alt="info" />
+            </div>
+            <div class="Project-info">
+              <h3>Portfolio</h3>
+              <p>
+                A collection of projects I've built to learn, expriment,and
+                solve real problems.
+              </p>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </article>
+          <!-- NOTE Project 2 -->
+          <article class="Project-card">
+            <div class="project-icon">
+              <img src="SVG/circle-question-mark.svg" alt="?" />
+            </div>
+            <div class="Project-info">
+              <h3>Soon</h3>
+              <p>Coming Soon</p>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </article>
+          <!-- NOTE Project 3 -->
+          <article class="Project-card">
+            <div class="project-icon">
+              <img src="SVG/circle-question-mark.svg" alt="?" />
+            </div>
+            <div class="Project-info">
+              <h3>Soon</h3>
+              <p>Coming Soon</p>
+              <a href="#" class="project-link">View Project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="S-C">
+        <!-- NOTE Skills -->
+        <section class="Skills s-b" id="Skills">
+          <div class="section-heading h-s">
+            <h2>Skills</h2>
+          </div>
+          <div class="Skills-list">
+            <span class="Skill">HTML</span>
+            <span class="Skill">CSS</span>
+            <span class="Skill">JavaScript</span>
+            <span class="Skill">Git</span>
+            <span class="Skill">Github</span>
+          </div>
+        </section>
+
+        <!-- NOTE Contact -->
+        <section class="Contact c-b" id="Contact">
+          <div class="section-heading h-c">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="contact-link">
+            <a href="https://github.com/theaminam" target="_blank" class="links"
+              ><img src="SVG/github-brands-solid-full.svg" alt=""
+            /></a>
+            <a href="https://t.me/theaminam" target="_blank" class="links"
+              ><img src="SVG/telegram-brands-solid-full.svg" alt=""
+            /></a>
+            <a href="mailto:theaminak@gmail.com" target="_blank" class="links"
+              ><img src="SVG/envelope-solid-full.svg" alt=""
+            /></a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- NOTE Footer -->
+    <footer class="Footer">
+      <p>&copy; 2026 <span> Amin Abbasi</span></p>
+      <p>Built with <span>&heartsuit;</span></p>
+    </footer>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

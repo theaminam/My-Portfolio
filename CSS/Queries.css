@@ -1,0 +1,370 @@
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+  /* Header */
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  .navigation {
+    margin: 0;
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 18rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition:
+      opacity 1s ease,
+      transform 1s ease,
+      visibility 1s ease;
+  }
+  .navigation.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .navigation a {
+    padding: 0 0.5rem;
+    border-bottom: 1px solid #000;
+  }
+  .navigation a:last-child {
+    border-bottom: none;
+  }
+
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .hero-intro {
+    font-size: clamp(4rem, 7vw, 5.5rem);
+    margin: 0;
+  }
+
+  .hero-dev {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .hero-actions a {
+    margin: 0;
+  }
+  .btn {
+    box-shadow: 3px 3px var(--shadow-clor);
+  }
+  .btn:hover {
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-out;
+  }
+
+  /* Code Window */
+  .code-window {
+    width: 100%;
+    margin: 3rem auto 0;
+  }
+
+  .code-window pre {
+    overflow-x: auto;
+    font-size: 1.3rem;
+  }
+
+  /* Projects */
+  .Projects {
+    padding: 2rem;
+  }
+
+  .Projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Project-card {
+    padding: 1.5rem;
+  }
+
+  .project-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  /* Skills + Contact */
+  .S-C {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .Skills,
+  .Contact {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 1.8rem;
+  }
+  .Skill {
+    box-shadow: 2px 2px var(--shadow-clor);
+  }
+  .links {
+    box-shadow: 2px 2px var(--shadow-clor);
+  }
+  .Skills:hover {
+    box-shadow: none;
+    transition: none;
+  }
+  .Contact:hover {
+    box-shadow: none;
+    transition: none;
+  }
+  /* Footer */
+  .Footer {
+    padding: 1.5rem 2rem;
+  }
+  .menu-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation.active {
+    display: flex;
+  }
+}
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+  /* Header */
+  header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .header {
+    margin-left: 0;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 18rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #000;
+  }
+  .navigation.active {
+    display: flex;
+  }
+  .navigation a {
+    padding: 0.5rem 0.7rem;
+    border-bottom: 1px solid #000;
+  }
+  .navigation a:last-child {
+    border-bottom: none;
+  }
+
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-intro {
+    font-size: clamp(3.5rem, 12vw, 5rem);
+    margin: 0;
+  }
+
+  .hero-dev {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .hero-description {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin: 1rem 0;
+  }
+
+  .hero-actions {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .btn {
+    margin: 0;
+    padding: 0.8rem;
+  }
+
+  /* Code Window */
+  .code-window {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 6px 6px var(--shadow-clor);
+  }
+
+  .code-window pre {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    overflow-x: auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  /* Projects */
+  .Projects {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border-bottom: var(--border);
+  }
+
+  .section-heading {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .Projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .Project-card {
+    gap: 1.2rem;
+    padding: 1.4rem;
+  }
+
+  .project-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .Project-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .Project-info p {
+    font-size: 1.2rem;
+  }
+
+  /* Skills + Contact */
+  .S-C {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .Skills,
+  .Contact {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 1.5rem;
+    border: 0;
+  }
+  .Skills:hover {
+    box-shadow: none;
+    transition: none;
+  }
+  .Contact:hover {
+    box-shadow: none;
+    transition: none;
+  }
+  .links {
+    box-shadow: 2px 2px var(--shadow-clor);
+  }
+  .Skill {
+    box-shadow: 2px 2px var(--shadow-clor);
+  }
+  .Skills {
+    border-bottom: var(--border);
+  }
+  .Contact {
+    border-bottom: var(--border);
+  }
+  .Skills-list {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .Skill {
+    padding: 0.5rem;
+  }
+
+  .contact-link {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .links {
+    padding: 0.5rem;
+  }
+
+  .contact-link a img {
+    width: 2.5rem;
+  }
+
+  /* Footer */
+  .Footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 1.5rem;
+    border: 0;
+    margin-top: 1rem;
+  }
+  .menu-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation {
+    display: none;
+  }
+  .navigation.active {
+    display: flex;
+  }
+}
