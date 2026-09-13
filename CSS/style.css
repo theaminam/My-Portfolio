@@ -273,8 +273,7 @@ header {
   margin-top: 4rem;
 }
 .Skills {
-  width: 150%;
-  /* height: 100%; */
+  width: 100%;
   border: var(--border-cards);
   border-left: 0;
   padding: 0 2.3rem;
