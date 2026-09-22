@@ -146,6 +146,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
   }
   .navigation {
     display: none;
@@ -360,6 +361,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
   }
   .navigation {
     display: none;
